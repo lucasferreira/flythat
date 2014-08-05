@@ -50,7 +50,6 @@ By the way if you want to open your modal by a clicking of button you can attach
 <a href="#" data-flythat="#simple-modal">Click here</a>
 ```
 
-<<<<<<< HEAD
 ## Complete data-* attributes options
 
 ```html
@@ -74,12 +73,9 @@ By the way if you want to open your modal by a clicking of button you can attach
 </div>
 ```
 
-=======
->>>>>>> FETCH_HEAD
 # Javascript usage
 
 If you don't want to use the automatic class "flythat" in your modal container, you are free to manually instance the flythat plugin:
-
 ```html
 <script>
 $("#simple-modal").flythat({
@@ -104,7 +100,6 @@ $("#simple-modal").flythat({
 ## How to show or hide
 
 If you need to manually show or hide your modal:
-
 ```html
 <script>
 $("#simple-modal").flythat({
@@ -118,12 +113,10 @@ $("#my-button").on('click', function(event) {
 });
 </script>
 ```
-<<<<<<< HEAD
 
 ## Javascript Events
 
 For monitoring the events of modal:
-
 ```html
 <script>
 $("#simple-modal").flythat({
@@ -142,5 +135,3 @@ $("#simple-modal").on('hide.flythat', function(event, el, instance) {
 # Demos
 
 There are a lot of exemples in __demos__ folder.
-=======
->>>>>>> FETCH_HEAD
