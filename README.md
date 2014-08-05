@@ -50,6 +50,32 @@ By the way if you want to open your modal by a clicking of button you can attach
 <a href="#" data-flythat="#simple-modal">Click here</a>
 ```
 
+<<<<<<< HEAD
+## Complete data-* attributes options
+
+```html
+<div class="flythat"
+    data-position="center"
+    data-autoOpen="false"
+    data-autoClose="false"
+    data-width="false"
+    data-height="false"
+    data-fadeIn='normal'
+    data-fadeOut='normal'
+    data-closeClass='close'
+    data-closeEsc="true"
+    data-hideOnMobile="false"
+    data-backdrop='close'
+    data-backdropClass="false"
+    data-backdropColor='#333333'
+    data-backdropColorRGBA='rgba(0, 0, 0, 0.75)'
+    >
+    <!-- modal content goes here -->
+</div>
+```
+
+=======
+>>>>>>> FETCH_HEAD
 # Javascript usage
 
 If you don't want to use the automatic class "flythat" in your modal container, you are free to manually instance the flythat plugin:
@@ -92,3 +118,29 @@ $("#my-button").on('click', function(event) {
 });
 </script>
 ```
+<<<<<<< HEAD
+
+## Javascript Events
+
+For monitoring the events of modal:
+
+```html
+<script>
+$("#simple-modal").flythat({
+    .......
+});
+
+$("#simple-modal").on('show.flythat', function(event, el, instance) {
+    // do something when modal opens
+});
+$("#simple-modal").on('hide.flythat', function(event, el, instance) {
+    // do something when modal closes
+});
+</script>
+```
+
+# Demos
+
+There are a lot of exemples in __demos__ folder.
+=======
+>>>>>>> FETCH_HEAD
