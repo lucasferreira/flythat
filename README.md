@@ -134,4 +134,4 @@ $("#simple-modal").on('hide.flythat', function(event, el, instance) {
 
 # Demos
 
-There are a lot of exemples in __demos__ folder.
+There are a lot of examples in __demos__ folder.
