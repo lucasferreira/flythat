@@ -33,6 +33,8 @@ Follow the basic syntax:
 </div>
 ```
 
+As you can see, the class "close" in HTML element (anchor or button, for instance) trigger the close event and hide actual opened modal.
+
 If you need a modal that automatic open with page load you can use the "autoOpen" attribute:
 ```html
 <div class="flythat" id="simple-modal" data-autoOpen="true">
@@ -46,4 +48,47 @@ If you need a modal that automatic open with page load you can use the "autoOpen
 By the way if you want to open your modal by a clicking of button you can attach the attribute "data-flythat='#your-modal-id'":
 ```html
 <a href="#" data-flythat="#simple-modal">Click here</a>
+```
+
+# Javascript usage
+
+If you don't want to use the automatic class "flythat" in your modal container, you are free to manually instance the flythat plugin:
+
+```html
+<script>
+$("#simple-modal").flythat({
+    position: "center", // left, right, left-bottom, right-bottom, center, [x, y] or a function
+    autoOpen: false, // set true for auto open with page load
+    autoClose: false, // set milliseconds (number) to auto close modal after X milisencods
+    width: false, // force a width for automatic position calc
+    height: false, // force a height for automatic position calc
+    fadeIn: 'normal', // normal, fast, slow, milliseconds (number) or false
+    fadeOut: 'normal', // normal, fast, slow, milliseconds (number) or false
+    closeClass: 'close', // if you need change the close trigger class
+    closeEsc: true, // allow automatic modal hiding by ESC key
+    hideOnMobile: false, // set true if you don't want to use flythat in mobile devices
+    backdrop: 'close', // false, true or 'close' - to close on backdrop/overlay click
+    backdropClass: false, // custom aditional class for backgrop/overlay
+    backdropColor: '#333333', // base color for old browsers
+    backdropColorRGBA: 'rgba(0, 0, 0, 0.75)' // rgba colors for modern browsers with alpha channel
+});
+</script>
+```
+
+## How to show or hide
+
+If you need to manually show or hide your modal:
+
+```html
+<script>
+$("#simple-modal").flythat({
+    .......
+});
+
+$("#my-button").on('click', function(event) {
+    event.preventDefault();
+
+    $("#simple-modal").flythat("show"); // show, hide or toggle
+});
+</script>
 ```
